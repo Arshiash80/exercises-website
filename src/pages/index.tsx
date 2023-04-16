@@ -19,12 +19,12 @@ const HomePage = ({ muscles, setHeadTitle }: HomePageProps & AppPageProps) => {
 			<Typography variant="h2">Muscles</Typography>
 			<main>
 				<CardGrid>
-					{muscles.map((muscle) => (
+					{muscles.map((muscle, index) => (
 						<Grid
 							item
 							xs={12}
 							md={6}
-							key={muscle}
+							key={index}
 							width={"100%"}
 							justifyContent={"space-between"}
 						>

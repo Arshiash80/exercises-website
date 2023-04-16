@@ -9,8 +9,6 @@ import ReactPlayer from "react-player";
 import Grid from "@mui/material/Grid";
 import { useEffect, useState } from "react";
 import CardHeader from "@mui/material/CardHeader";
-import IconButton from "@mui/joy/IconButton/IconButton";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 type ExerciseForMusclePageProps = {
 	selectedMuscle: string;
@@ -32,17 +30,17 @@ const ExerciseForMusclePage = ({
 	return (
 		<>
 			<Typography variant="h3">
-				Exercises for "{selectedMuscle}" muscle
+				Exercises for {selectedMuscle} muscle
 			</Typography>
 			<main>
 				{hasWindow && (
 					<Grid container spacing={3} width={"100%"} marginTop={2}>
-						{exercies.map((exercie) => (
+						{exercies.map((exercie, index) => (
 							<Grid
 								item
 								xs={12}
 								md={6}
-								key={exercie.Name}
+								key={index}
 								width={"100%"}
 								justifyContent={"space-between"}
 							>
@@ -64,8 +62,8 @@ const ExerciseForMusclePage = ({
 												Primary Muscles
 											</Typography>
 											<ul>
-												{exercie["Primary Muscles"].map((muscle) => (
-													<li>
+												{exercie["Primary Muscles"].map((muscle, index) => (
+													<li key={index}>
 														<Typography variant="body2" color="text.secondary">
 															{muscle}
 														</Typography>
@@ -80,8 +78,8 @@ const ExerciseForMusclePage = ({
 												Secondary Muscles
 											</Typography>
 											<ul>
-												{exercie["Secondary Muscles"].map((muscle) => (
-													<li>
+												{exercie["Secondary Muscles"].map((muscle, index) => (
+													<li key={index}>
 														<Typography variant="body2" color="text.secondary">
 															{muscle}
 														</Typography>
