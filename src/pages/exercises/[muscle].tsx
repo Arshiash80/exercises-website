@@ -31,7 +31,8 @@ const ExerciseForMusclePage = ({
 		<>
 			<Typography variant="h3">
 				Exercises for
-				<br />"{selectedMuscle}"
+				<br />
+				&apos{selectedMuscle}&apos
 				<br />
 				muscle
 			</Typography>
