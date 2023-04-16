@@ -41,7 +41,7 @@ function AppBar() {
 							fontWeight: 700,
 						}}
 					>
-						My Exercise Dicttoionary
+						My Exercises Dictionary
 					</Typography>
 
 					<Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>

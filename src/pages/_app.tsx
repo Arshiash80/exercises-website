@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
 				<Head>
 					<title key={"title"}>{`${
 						headTitle && headTitle + " - "
-					} My Exercise Dictionary`}</title>
+					} My Exercises Dictionary`}</title>
 					<meta
 						name="description"
 						content={headDescripion ?? "Nextjs movies application"}
