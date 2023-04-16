@@ -29,8 +29,8 @@ export default function App({ Component, pageProps }: AppProps) {
 					<link rel="icon" href="/favicon.ico" />
 				</Head>
 				<NextNProgress />
-				<AppBar />
 				<Container maxWidth="md">
+					<AppBar />
 					<Component
 						{...pageProps}
 						setHeadTitle={setHeadTitle}

@@ -27,13 +27,14 @@ const HomePage = ({ muscles, setHeadTitle }: HomePageProps & AppPageProps) => {
 							key={index}
 							width={"100%"}
 							justifyContent={"space-between"}
+							alignItems={"stretch"}
 						>
 							<Box width={"100%"}>
 								<Link href={`/exercises/${muscle}`}>
 									<Paper
 										elevation={3}
 										sx={{
-											padding: 4,
+											py: 4,
 										}}
 									>
 										<Typography

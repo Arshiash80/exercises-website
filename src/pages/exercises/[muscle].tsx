@@ -30,11 +30,14 @@ const ExerciseForMusclePage = ({
 	return (
 		<>
 			<Typography variant="h3">
-				Exercises for {selectedMuscle} muscle
+				Exercises for
+				<br />"{selectedMuscle}"
+				<br />
+				muscle
 			</Typography>
 			<main>
 				{hasWindow && (
-					<Grid container spacing={3} width={"100%"} marginTop={2}>
+					<Grid container spacing={3} marginTop={2}>
 						{exercies.map((exercie, index) => (
 							<Grid
 								item
